@@ -61,7 +61,7 @@
     font-size: 2.2rem;
 
     @include respond(xl) {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
     a {
@@ -80,7 +80,7 @@
     margin: 0;
     font-size: 1.75rem;
     @include respond(xl) {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
