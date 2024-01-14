@@ -11,6 +11,7 @@
         box-shadow: var(--shadow-l1);
         border-radius: var(--card-border-radius);
         overflow: hidden;
+        
 
         transition: box-shadow 0.3s ease;
 
@@ -20,16 +21,18 @@
 
         .article-image {
             img {
+                display: block;
                 width: 100%;
                 height: 150px;
                 object-fit: cover;
+                
 
                 @include respond(md) {
                     height: 200px;
                 }
 
                 @include respond(xl) {
-                    height: 250px;
+                    height: 216px;
                 }
             }
         }
@@ -44,6 +47,23 @@
         }
     }
 }
+
+@media (min-width: 1536px){
+    .article-list article .article-header {
+        display: flex;
+    }
+
+    .article-list article .article-image {
+        width: 38.2%;
+    }
+
+    .article-list article .article-details {
+        width: 61.8%;
+        padding: 6px 18px;
+        gap: 32px;
+    }
+}
+
 
 .article-details {
     display: flex;
